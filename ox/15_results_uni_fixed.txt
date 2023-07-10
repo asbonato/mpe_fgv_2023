@@ -1,0 +1,115 @@
+
+Switching(28) Modelling DLicms_sp by MS(2)
+              The dataset is: /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+              The estimation sample is: 2003-04-01 - 2014-12-01
+
+                 Coefficient   Std.Error  t-value  t-prob
+CSeasonal          -0.100389     0.01468    -6.84   0.000
+CSeasonal_1        -0.151339     0.01421    -10.6   0.000
+CSeasonal_2       -0.0485841     0.01405    -3.46   0.001
+CSeasonal_3       -0.0117552     0.01337   -0.879   0.381
+CSeasonal_4       -0.0436093     0.01368    -3.19   0.002
+CSeasonal_5       -0.0555664     0.01318    -4.22   0.000
+CSeasonal_6       -0.0589422     0.01322    -4.46   0.000
+CSeasonal_7       -0.0455437     0.01319    -3.45   0.001
+CSeasonal_8       -0.0225634     0.01328    -1.70   0.092
+CSeasonal_9       -0.0281799     0.01357    -2.08   0.040
+CSeasonal_10      -0.0648923     0.01341    -4.84   0.000
+Constant(0)        0.0102860    0.003823     2.69   0.008
+Constant(1)        0.0112693    0.004265     2.64   0.009
+DLicms_sp_1(0)     -0.151173     0.09735    -1.55   0.123
+DLicms_sp_1(1)     -0.640994     0.08821    -7.27   0.000
+
+                Coefficient   Std.Error
+sigma             0.0321230    0.001925
+p_{0|0}            0.987201     0.01274
+
+log-likelihood     281.013237
+no. of observations       141  no. of parameters          17
+AIC               -3.74486861  SC                -3.38934436
+mean(DLicms_sp)    0.00899984  se(DLicms_sp)        0.052506
+
+Linearity LR-test Chi^2(3)  =   10.072 [0.0180]*  approximate upperbound: [0.0180]*
+
+Transition probabilities p_{i|j} = P(Regime i at t+1 | Regime j at t)
+                Regime 0,t   Regime 1,t
+Regime 0,t+1       0.98720       0.0000
+Regime 1,t+1      0.012799       1.0000
+
+Transition probability settings (-1: free parameter, -2: 1-sum(p_{i|.})
+                Regime 0,t   Regime 1,t
+Regime 0,t+1       -1.0000      -2.0000
+Regime 1,t+1       -2.0000       1.0000
+
+Used uniform probabilities to start recursion
+Std.Error based on numerical Hessian matrix
+SQPF using analytical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+     -0.10706     -0.14340    -0.061730    -0.014201    -0.043232    -0.055105    -0.059064    -0.048120    -0.023925    -0.027884    -0.067787     0.012146     0.010085     -0.42939     -0.43664     0.034161      0.87019      0.72622
+
+
+Regime classification based on smoothed probabilities
+Regime 0                  months  avg.prob.
+2003-04-01 - 2009-10-01      79       0.969
+  Total: 79 months (56.03%) with average duration of 79.00 months.
+Regime 1                  months  avg.prob.
+2009-11-01 - 2014-12-01      62       0.991
+  Total: 62 months (43.97%) with average duration of 62.00 months.
+
+
+Descriptive statistics for scaled residuals:
+Normality test:   Chi^2(2)  =   2.5773 [0.2756]  
+ARCH 1-1 test:    F(1,122)  =   2.5937 [0.1099]  
+Portmanteau(36):  Chi^2(36) =   51.243 [0.0477]* 
+
+Forecasting DLicms_sp from 2015(1) to 2016(1)
+ Horizon    Forecast        (SE)      Actual
+       1    -0.10178    0.031985    -0.11819
+       2   -0.022213    0.037768  -0.0068667
+       3    0.029537    0.039984  -0.0048254
+       4    0.033195    0.041297    0.049859
+       5  -0.0010038    0.041447   -0.063292
+       6   0.0089601    0.041296    0.058140
+       7 -0.00080252    0.041469  -0.0027353
+       8    0.018854    0.042115   -0.042659
+       9    0.029235    0.041937    0.063358
+      10    0.016964    0.042471   0.0053328
+      11   -0.011883    0.042040   -0.025915
+      12    0.071500    0.041876    0.074675
+ Standard errors based on M=10000 replications
+   mean(Error) =   -0.0069726    RMSE =    0.033610
+   SD(Error)   =     0.032879    MAPE =      142.60
+
+Forecasts of probabilities to be in each regime
+ Horizon P[Regime 0] P[Regime 1]
+       1  1.2286e-11      1.0000
+       2  1.2129e-11      1.0000
+       3  1.1974e-11      1.0000
+       4  1.1820e-11      1.0000
+       5  1.1669e-11      1.0000
+       6  1.1520e-11      1.0000
+       7  1.1372e-11      1.0000
+       8  1.1227e-11      1.0000
+       9  1.1083e-11      1.0000
+      10  1.0941e-11      1.0000
+      11  1.0801e-11      1.0000
+      12  1.0663e-11      1.0000
+
+Forecasts for each regime
+ Horizon y[Regime 0] y[Regime 1]
+       1   -0.052885    -0.10178
+       2   -0.080444   -0.022213
+       3    0.026477    0.029537
+       4    0.047142    0.033195
+       5    0.012164  -0.0010038
+       6   0.0054945   0.0089601
+       7   0.0031269 -0.00080252
+       8    0.016883    0.018854
+       9    0.037784    0.029235
+      10    0.029008    0.016964
+      11  -0.0063778   -0.011883
+      12    0.063864    0.071500
+15_forecast_uni_fixed [2015( 1) - 2015(12)] saved to variaveis_previsao.xlsx
+variaveis_previsao.xlsx saved to /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+

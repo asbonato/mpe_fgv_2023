@@ -1,0 +1,140 @@
+
+Switching(39) Modelling DLicms_sp by MS(2)
+              The dataset is: /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+              The estimation sample is: 2003-04-01 - 2012-12-01
+
+                Coefficient   Std.Error  t-value  t-prob
+dias_uteis        0.0114089    0.003233     3.53   0.001
+CSeasonal        -0.0659631     0.01702    -3.87   0.000
+CSeasonal_1      -0.0902424     0.01482    -6.09   0.000
+CSeasonal_2      -0.0462775     0.01931    -2.40   0.019
+CSeasonal_3       0.0331538     0.01181     2.81   0.006
+CSeasonal_4      -0.0422359     0.01388    -3.04   0.003
+CSeasonal_5      -0.0238957     0.01144    -2.09   0.039
+CSeasonal_6      -0.0525347     0.01376    -3.82   0.000
+CSeasonal_7      -0.0332001     0.01147    -2.90   0.005
+CSeasonal_8      0.00531127     0.01145    0.464   0.644
+CSeasonal_9      -0.0274215     0.01216    -2.26   0.026
+CSeasonal_10     -0.0162839     0.01283    -1.27   0.207
+Constant(0)       -0.231059     0.06674    -3.46   0.001
+Constant(1)       -0.234972     0.06922    -3.39   0.001
+D2igp_m(0)      5.28597e-05   0.0004438    0.119   0.905
+D2igp_m(1)       0.00166312    0.002185    0.761   0.448
+Dibc_br(0)       0.00208591    0.001341     1.56   0.123
+Dibc_br(1)       0.00443717    0.002132     2.08   0.040
+
+                Coefficient   Std.Error
+sigma(0)          0.0125488    0.001852
+sigma(1)          0.0556062    0.006875
+p_{0|0}            0.750697     0.08627
+p_{1|1}            0.652480      0.1253
+
+log-likelihood     242.406019
+no. of observations       117  no. of parameters          22
+AIC               -3.76762426  SC                -3.24824112
+mean(DLicms_sp)     0.0100581  se(DLicms_sp)       0.0511885
+
+Linearity LR-test Chi^2(6)  =   32.550 [0.0000]** approximate upperbound: [0.0000]**
+
+Transition probabilities p_{i|j} = P(Regime i at t+1 | Regime j at t)
+                Regime 0,t   Regime 1,t
+Regime 0,t+1       0.75070      0.34752
+Regime 1,t+1       0.24930      0.65248
+
+Used uniform probabilities to start recursion
+Std.Error based on numerical Hessian matrix
+SQPF using analytical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+    0.0071327     -0.11764     -0.11490     -0.10740    -0.011978    -0.083986    -0.061459     -0.10335    -0.070089    -0.032848    -0.072328    -0.064704     -0.13893     -0.15323   0.00033219    0.0012293    0.0037694    0.0066458     0.027917     0.045529      0.84211      0.65125
+
+
+Regime classification based on smoothed probabilities
+Regime 0                  months  avg.prob.
+2003-06-01 - 2003-11-01       6       0.833
+2004-02-01 - 2004-07-01       6       0.748
+2004-09-01 - 2004-11-01       3       0.770
+2005-02-01 - 2006-12-01      23       0.904
+2007-04-01 - 2007-09-01       6       0.801
+2008-02-01 - 2008-04-01       3       0.731
+2008-06-01 - 2008-10-01       5       0.825
+2009-02-01 - 2009-02-01       1       0.537
+2009-06-01 - 2009-09-01       4       0.783
+2010-03-01 - 2010-04-01       2       0.751
+2010-07-01 - 2010-11-01       5       0.817
+2011-03-01 - 2011-10-01       8       0.872
+2012-06-01 - 2012-10-01       5       0.846
+  Total: 77 months (65.81%) with average duration of 5.92 months.
+Regime 1                  months  avg.prob.
+2003-04-01 - 2003-05-01       2       0.866
+2003-12-01 - 2004-01-01       2       1.000
+2004-08-01 - 2004-08-01       1       0.553
+2004-12-01 - 2005-01-01       2       1.000
+2007-01-01 - 2007-03-01       3       0.968
+2007-10-01 - 2008-01-01       4       0.851
+2008-05-01 - 2008-05-01       1       1.000
+2008-11-01 - 2009-01-01       3       0.861
+2009-03-01 - 2009-05-01       3       0.918
+2009-10-01 - 2010-02-01       5       0.861
+2010-05-01 - 2010-06-01       2       0.955
+2010-12-01 - 2011-02-01       3       0.881
+2011-11-01 - 2012-05-01       7       0.836
+2012-11-01 - 2012-12-01       2       0.996
+  Total: 40 months (34.19%) with average duration of 2.86 months.
+
+
+Descriptive statistics for scaled residuals:
+Normality test:   Chi^2(2)  =   4.4172 [0.1099]  
+ARCH 1-1 test:    F(1,93)   =   2.3836 [0.1260]  
+Portmanteau(36):  Chi^2(36) =   46.582 [0.1114]  
+
+
+Forecasting DLicms_sp from 2013(1) to 2014(1)
+ Horizon    Forecast        (SE)      Actual
+       1   -0.013619    0.040643    -0.15269
+       2   -0.095622    0.034610   -0.012456
+       3    0.018513    0.032178  0.00092146
+       4    0.088245    0.031197    0.082551
+       5   -0.013340    0.030802   0.0053846
+       6  -0.0022661    0.030642   -0.039134
+       7    0.033218    0.030578    0.055750
+       8    0.015622    0.030552  -0.0054743
+       9    0.034464    0.030542    0.051833
+      10    0.055424    0.030537   0.0092918
+      11  0.00097019    0.030536   -0.049903
+      12    0.034108    0.030535     0.10310
+   mean(Error) =   -0.0088789    RMSE =    0.057038
+   SD(Error)   =     0.056343    MAPE =      353.44
+
+Forecasts of probabilities to be in each regime
+ Horizon P[Regime 0] P[Regime 1]
+       1     0.34752     0.65248
+       2     0.48763     0.51237
+       3     0.54412     0.45588
+       4     0.56690     0.43310
+       5     0.57608     0.42392
+       6     0.57978     0.42022
+       7     0.58128     0.41872
+       8     0.58188     0.41812
+       9     0.58212     0.41788
+      10     0.58222     0.41778
+      11     0.58226     0.41774
+      12     0.58227     0.41773
+
+Forecasts for each regime
+ Horizon y[Regime 0] y[Regime 1]
+       1   -0.016203   -0.012242
+       2   -0.092438   -0.098652
+       3   0.0057026    0.033803
+       4    0.086866    0.090050
+       5  -0.0094576   -0.018616
+       6  -0.0011107  -0.0038602
+       7    0.024197    0.045741
+       8    0.016148    0.014891
+       9    0.034789    0.034012
+      10    0.044202    0.071062
+      11   0.0025502  -0.0012320
+      12    0.034532    0.033516
+13_forecast_multi_var [2013( 1) - 2013(12)] saved to variaveis_previsao.xlsx
+variaveis_previsao.xlsx saved to /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+

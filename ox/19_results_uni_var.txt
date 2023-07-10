@@ -1,0 +1,143 @@
+variaveis_previsao.xlsx loaded from /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+
+
+Switching( 3) Modelling DLicms_sp by MS(2)
+              The dataset is: /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+              The estimation sample is: 2003-03-01 - 2018-12-01
+
+                 Coefficient   Std.Error  t-value  t-prob
+CSeasonal          -0.104606       0.000    -.Inf   0.000
+CSeasonal_1        -0.137176       0.000    -.Inf   0.000
+CSeasonal_2       -0.0675725       0.000    -.Inf   0.000
+CSeasonal_3       -0.0114564       0.000    -.Inf   0.000
+CSeasonal_4       -0.0570563       0.000    -.Inf   0.000
+CSeasonal_5       -0.0592131       0.000    -.Inf   0.000
+CSeasonal_6       -0.0506906       0.000    -.Inf   0.000
+CSeasonal_7       -0.0290067       0.000    -.Inf   0.000
+CSeasonal_8       -0.0267397       0.000    -.Inf   0.000
+CSeasonal_9       -0.0280653       0.000    -.Inf   0.000
+CSeasonal_10      -0.0463436       0.000    -.Inf   0.000
+Constant(0)       0.00643763       0.000    +.Inf   0.000
+Constant(1)       0.00888490       0.000    +.Inf   0.000
+DLicms_sp_1(0)     -0.701328       0.000    -.Inf   0.000
+DLicms_sp_1(1)     -0.390856       0.000    -.Inf   0.000
+
+                Coefficient   Std.Error
+sigma(0)        4.95283e-05       0.000
+sigma(1)          0.0356649       0.000
+p_{0|0}            0.248173       0.000
+p_{1|1}            0.914367       0.000
+
+log-likelihood     433.336003
+no. of observations       190  no. of parameters          19
+AIC               -4.36143161  SC                -4.03672921
+mean(DLicms_sp)    0.00694816  se(DLicms_sp)       0.0511589
+
+Linearity LR-test Chi^2(5)  =   113.33 [0.0000]** approximate upperbound: [0.0000]**
+
+Transition probabilities p_{i|j} = P(Regime i at t+1 | Regime j at t)
+                Regime 0,t   Regime 1,t
+Regime 0,t+1       0.24817     0.085633
+Regime 1,t+1       0.75183      0.91437
+
+Used uniform probabilities to start recursion
+Std.Error based on numerical Hessian matrix
+SQPF using analytical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+    -0.090285     -0.13802    -0.065211    -0.010868    -0.048178    -0.053987    -0.055435    -0.045702    -0.025467    -0.027546    -0.062221     0.011309    0.0045252     -0.38509     -0.52088     0.027786     0.041425      0.84224      0.68872
+
+
+Regime classification based on smoothed probabilities
+Regime 0                  months  avg.prob.
+2004-07-01 - 2004-08-01       2       0.990
+2005-06-01 - 2005-06-01       1       0.980
+2005-11-01 - 2005-11-01       1       0.982
+2006-02-01 - 2006-02-01       1       0.980
+2007-07-01 - 2007-07-01       1       0.958
+2010-02-01 - 2010-02-01       1       0.984
+2010-09-01 - 2010-09-01       1       0.980
+2011-02-01 - 2011-02-01       1       0.891
+2011-08-01 - 2011-08-01       1       0.968
+2014-06-01 - 2014-06-01       1       0.980
+2015-01-01 - 2015-01-01       1       0.945
+2015-03-01 - 2015-04-01       2       0.995
+2016-01-01 - 2016-01-01       1       0.931
+2016-05-01 - 2016-05-01       1       0.982
+2016-09-01 - 2016-12-01       4       0.997
+  Total: 20 months (10.53%) with average duration of 1.33 months.
+Regime 1                  months  avg.prob.
+2003-03-01 - 2004-06-01      16       1.000
+2004-09-01 - 2005-05-01       9       1.000
+2005-07-01 - 2005-10-01       4       1.000
+2005-12-01 - 2006-01-01       2       1.000
+2006-03-01 - 2007-06-01      16       1.000
+2007-08-01 - 2010-01-01      30       1.000
+2010-03-01 - 2010-08-01       6       1.000
+2010-10-01 - 2011-01-01       4       1.000
+2011-03-01 - 2011-07-01       5       1.000
+2011-09-01 - 2014-05-01      33       1.000
+2014-07-01 - 2014-12-01       6       1.000
+2015-02-01 - 2015-02-01       1       1.000
+2015-05-01 - 2015-12-01       8       1.000
+2016-02-01 - 2016-04-01       3       1.000
+2016-06-01 - 2016-08-01       3       1.000
+2017-01-01 - 2018-12-01      24       1.000
+  Total: 170 months (89.47%) with average duration of 10.62 months.
+
+
+Descriptive statistics for scaled residuals:
+Normality test:   Chi^2(2)  =   1.9331 [0.3804]  
+ARCH 1-1 test:    F(1,169)  =   1.8777 [0.1724]  
+Portmanteau(36):  Chi^2(36) =   50.945 [0.0505]  
+
+Forecasting DLicms_sp from 2019(1) to 2020(1)
+ Horizon    Forecast        (SE)      Actual
+       1   -0.061034    0.032229    0.032794
+       2   -0.051299    0.034657   -0.093232
+       3    0.014229    0.035280   0.0038996
+       4    0.042659    0.035233    0.060632
+       5   -0.014956    0.035547   -0.023860
+       6   0.0072356    0.035171   -0.029947
+       7   0.0063801    0.035089    0.033127
+       8    0.028426    0.035218   0.0011072
+       9    0.021376    0.035433    0.030369
+      10    0.023030    0.035095    0.029988
+      11   0.0040525    0.035160   0.0045714
+      12    0.058416    0.035825    0.044464
+ Standard errors based on M=10000 replications
+   mean(Error) =    0.0012831    RMSE =    0.034448
+   SD(Error)   =     0.034424    MAPE =      285.89
+
+Forecasts of probabilities to be in each regime
+ Horizon P[Regime 0] P[Regime 1]
+       1    0.085633     0.91437
+       2    0.099552     0.90045
+       3     0.10181     0.89819
+       4     0.10218     0.89782
+       5     0.10224     0.89776
+       6     0.10225     0.89775
+       7     0.10225     0.89775
+       8     0.10225     0.89775
+       9     0.10225     0.89775
+      10     0.10225     0.89775
+      11     0.10225     0.89775
+      12     0.10225     0.89775
+
+Forecasts for each regime
+ Horizon y[Regime 0] y[Regime 1]
+       1   -0.074559   -0.059768
+       2   -0.026954   -0.053437
+       3   0.0092626    0.013692
+       4    0.039979    0.043571
+       5   -0.027163   -0.013707
+       6    0.017769   0.0065232
+       7  -0.0052207   0.0071385
+       8    0.032586    0.028582
+       9   0.0083381    0.022468
+      10    0.024018    0.023532
+      11  -0.0052570   0.0048375
+      12    0.061618    0.058488
+19_forecast_uni_var [2019( 1) - 2019(12)] saved to variaveis_previsao.xlsx
+variaveis_previsao.xlsx saved to /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+

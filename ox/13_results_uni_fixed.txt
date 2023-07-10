@@ -1,0 +1,96 @@
+Switching(36) Modelling DLicms_sp by MS(2)
+              The dataset is: /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+              The estimation sample is: 2003-04-01 - 2012-12-01
+
+                 Coefficient   Std.Error  t-value  t-prob
+CSeasonal         -0.0916581     0.01316    -6.97   0.000
+CSeasonal_1        -0.138452     0.01308    -10.6   0.000
+CSeasonal_2       -0.0612001     0.01370    -4.47   0.000
+CSeasonal_3       -0.0281566     0.01342    -2.10   0.038
+CSeasonal_4       -0.0586841     0.01301    -4.51   0.000
+CSeasonal_5       -0.0505150     0.01334    -3.79   0.000
+CSeasonal_6       -0.0629512     0.01286    -4.90   0.000
+CSeasonal_7       -0.0518958     0.01237    -4.20   0.000
+CSeasonal_8       -0.0319714     0.01298    -2.46   0.015
+CSeasonal_9       -0.0453497     0.01284    -3.53   0.001
+CSeasonal_10      -0.0629263     0.01215    -5.18   0.000
+Constant(0)        0.0205859    0.004213     4.89   0.000
+Constant(1)        0.0103099    0.003910     2.64   0.010
+DLicms_sp_1(0)      0.162205     0.09646     1.68   0.096
+DLicms_sp_1(1)     -0.758405     0.09060    -8.37   0.000
+
+                Coefficient   Std.Error
+sigma             0.0259579    0.001961
+p_{0|0}           0.0692912     0.08746
+p_{1|1}            0.190191      0.1114
+
+log-likelihood     242.376912
+no. of observations       117  no. of parameters          18
+AIC               -3.83550276  SC                -3.41055293
+mean(DLicms_sp)     0.0100581  se(DLicms_sp)       0.0511885
+
+Linearity LR-test Chi^2(4)  =   31.414 [0.0000]** approximate upperbound: [0.0000]**
+
+Transition probabilities p_{i|j} = P(Regime i at t+1 | Regime j at t)
+                Regime 0,t   Regime 1,t
+Regime 0,t+1      0.069291      0.80981
+Regime 1,t+1       0.93071      0.19019
+
+Used uniform probabilities to start recursion
+Std.Error based on numerical Hessian matrix
+SQPF using analytical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+    -0.098687     -0.14062    -0.051892    -0.011136    -0.044197    -0.045776    -0.057799    -0.042054    -0.021061    -0.031410    -0.060286     0.013234     0.010495     -0.38779     -0.39429     0.034840      0.87084      0.71767
+
+
+Forecasting DLicms_sp from 2013(1) to 2014(1)
+ Horizon    Forecast        (SE)      Actual
+       1   -0.064489    0.026127    -0.15269
+       2   -0.047496    0.027415   -0.012456
+       3    0.027760    0.027985  0.00092146
+       4    0.035713    0.027393    0.082551
+       5  0.00074201    0.027278   0.0053846
+       6    0.021472    0.027124   -0.039134
+       7   0.0017052    0.027310    0.055750
+       8    0.019708    0.027740  -0.0054743
+       9    0.033425    0.027663    0.051833
+      10    0.015870    0.027441   0.0092918
+      11   0.0038249    0.027726   -0.049903
+      12    0.070842    0.027961     0.10310
+ Standard errors based on M=10000 replications
+   mean(Error) =   -0.0058255    RMSE =    0.044235
+   SD(Error)   =     0.043850    MAPE =      362.64
+
+Forecasts of probabilities to be in each regime
+ Horizon P[Regime 0] P[Regime 1]
+       1     0.39922     0.60078
+       2     0.51418     0.48582
+       3     0.42905     0.57095
+       4     0.49209     0.50791
+       5     0.44541     0.55459
+       6     0.47998     0.52002
+       7     0.45438     0.54562
+       8     0.47333     0.52667
+       9     0.45930     0.54070
+      10     0.46969     0.53031
+      11     0.46199     0.53801
+      12     0.46769     0.53231
+
+Forecasts for each regime
+ Horizon y[Regime 0] y[Regime 1]
+       1   0.0042594    -0.11017
+       2   -0.060195    0.012393
+       3   0.0066019  -0.0033094
+       4    0.050480    0.041643
+       5    0.027070   -0.022977
+       6    0.031442    0.034200
+       7    0.019715   -0.021599
+       8    0.028868    0.031775
+       9    0.050277    0.011220
+      10    0.040371    0.013431
+      11    0.021188  -0.0058223
+      12    0.081003    0.071706
+13_forecast_uni_fixed [2013( 1) - 2013(12)] saved to variaveis_previsao.xlsx
+variaveis_previsao.xlsx saved to /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+

@@ -1,0 +1,23 @@
+variaveis_previsao.xlsx loaded from /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final_diff/ox/variaveis_previsao.xlsx
+
+
+// Batch code for Switching( 1)
+module("PcGive");
+package("Switching");
+usedata("variaveis_previsao.xlsx");
+system
+{
+    Y = DLicms_sp;
+    X = CSeasonal, CSeasonal_1, CSeasonal_2, CSeasonal_3, CSeasonal_4, 
+        CSeasonal_5, CSeasonal_6, CSeasonal_7, CSeasonal_8, CSeasonal_9, 
+        CSeasonal_10;
+    R = Constant, DLicms_sp_1;
+}
+MS(2);
+estimate("ML", 2003-03-01, 0, 2021-12-01, 0);
+classification();
+testsummary();
+forecast(12);
+forecast(12);
+
+

@@ -1,0 +1,15 @@
+Model naive univariado eliminated 2023-07-05 02:42:24
+Model rnn-lstm univariado eliminated 2023-07-05 02:42:27
+Model rnn-lstm multivariado eliminated 2023-07-05 02:42:30
+Model sarima univariado eliminated 2023-07-05 02:42:33
+#####################################################################################################
+Superior Set Model created	:
+                              Rank_M       v_M  MCS_M Rank_R       v_R MCS_R       Loss
+sarimax univariado                 3  1.330403 0.3484      3  3.863398     0 0.04771008
+markov-switching univariado        4  1.457628 0.3084      4  3.954590     0 0.04852210
+sarimax multivariado               2  1.086027 0.5710      2  2.989909     0 0.04694450
+markov-switching multivariado      1 -4.733398 1.0000      1 -2.989909     1 0.03740226
+p-value	:
+[1] 0.3084
+
+#####################################################################################################
