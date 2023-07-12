@@ -1,15 +1,15 @@
-Model naive univariado eliminated 2023-07-03 17:08:37
-Model rnn-lstm univariado eliminated 2023-07-03 17:08:41
+Model naive univariado eliminated 2023-07-12 12:17:25
+Model rnn-lstm univariado eliminated 2023-07-12 12:17:29
 ###########################################################################################
-Superior Set Model created	:
-                              Rank_M        v_M MCS_M Rank_R        v_R  MCS_R       Loss
-sarima univariado                  3 -3.5051856 1.000      5  3.2272517 0.0000 0.05180554
-sarimax univariado                 1 -4.5668618 1.000      2  0.3518209 1.0000 0.04771008
-markov-switching univariado        4  0.7978727 0.991      3  1.8931918 0.2690 0.05900766
-sarimax multivariado               2 -4.1841570 1.000      1 -0.3518209 1.0000 0.04694450
-markov-switching multivariado      6  1.5135262 0.411      4  2.5203387 0.0184 0.06346838
-rnn-lstm multivariado              5  0.9832403 0.921      6  3.2595022 0.0000 0.06003565
-p-value	:
-[1] 0.411
+Superior Set Model created  :
+                              Rank_M        v_M  MCS_M Rank_R        v_R  MCS_R       Loss
+sarima univariado                  3 -3.1841050 1.0000      5  3.2055446 0.0000 0.05180554
+sarimax univariado                 1 -4.4549511 1.0000      2  0.3473917 1.0000 0.04771008
+markov-switching univariado        4  0.6041607 1.0000      3  1.6220337 0.5240 0.05808682
+sarimax multivariado               2 -3.9382721 1.0000      1 -0.3473917 1.0000 0.04694450
+markov-switching multivariado      6  1.5232446 0.3770      4  2.4993465 0.0236 0.06346838
+rnn-lstm multivariado              5  1.0035961 0.9022      6  3.2630549 0.0000 0.06003565
+p-value :
+[1] 0.377
 
 ###########################################################################################
