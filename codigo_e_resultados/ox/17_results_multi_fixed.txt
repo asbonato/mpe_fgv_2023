@@ -1,0 +1,99 @@
+
+Switching(17) Modelling DLicms_sp by MS(2)
+              The dataset is: /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+              The estimation sample is: 2003-03-01 - 2016-12-01
+
+                Coefficient   Std.Error  t-value  t-prob
+dias_uteis       0.00832310    0.004070     2.04   0.043
+CSeasonal         -0.140046     0.01341    -10.4   0.000
+CSeasonal_1      -0.0956791     0.01934    -4.95   0.000
+CSeasonal_2      -0.0937536     0.02392    -3.92   0.000
+CSeasonal_3      -0.0130232     0.01398   -0.931   0.353
+CSeasonal_4      -0.0746016     0.01381    -5.40   0.000
+CSeasonal_5      -0.0570203     0.01368    -4.17   0.000
+CSeasonal_6      -0.0951813     0.01678    -5.67   0.000
+CSeasonal_7      -0.0668574     0.01326    -5.04   0.000
+CSeasonal_8      -0.0276755     0.01334    -2.08   0.040
+CSeasonal_9      -0.0595231     0.01461    -4.07   0.000
+CSeasonal_10     -0.0678683     0.01460    -4.65   0.000
+Constant(0)       -0.167383     0.08463    -1.98   0.050
+Constant(1)       -0.171597     0.08650    -1.98   0.049
+D2igp_m(0)      3.18065e-06   0.0006146  0.00517   0.996
+D2igp_m(1)     -0.000740338    0.002891   -0.256   0.798
+Dibc_br(0)       0.00308413    0.001823     1.69   0.093
+Dibc_br(1)       0.00770002    0.003576     2.15   0.033
+
+                Coefficient   Std.Error
+sigma             0.0341748    0.002075
+p_{0|0}            0.985724     0.03512
+p_{1|1}            0.800478      0.2872
+
+log-likelihood     322.684756
+no. of observations       166  no. of parameters          21
+AIC                -3.6347561  SC                -3.24107089
+mean(DLicms_sp)    0.00743376  se(DLicms_sp)       0.0519396
+
+Linearity LR-test Chi^2(5)  =  0.53082 [0.9910]   approximate upperbound: [1.0000]
+
+Transition probabilities p_{i|j} = P(Regime i at t+1 | Regime j at t)
+                Regime 0,t   Regime 1,t
+Regime 0,t+1       0.98572      0.19952
+Regime 1,t+1      0.014276      0.80048
+
+Used uniform probabilities to start recursion
+Std.Error based on numerical Hessian matrix
+SQPF using analytical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+    0.0076074     -0.13934    -0.097417    -0.096142    -0.013111    -0.074940    -0.056897    -0.096133    -0.066481    -0.026678    -0.060388    -0.069657     -0.15265     -0.15408   4.5990e-06   2.2927e-05    0.0036221    0.0037399     0.034686      0.87094      0.73271
+
+
+Forecasting DLicms_sp from 2017(1) to 2018(1)
+ Horizon    Forecast        (SE)      Actual
+       1   -0.075754    0.034175   -0.023141
+       2   -0.036394    0.034175   -0.097487
+       3    0.030311    0.034175    0.031178
+       4   0.0076012    0.034175    0.061340
+       5    0.015053    0.034175   -0.051181
+       6    0.012788    0.034175    0.042983
+       7  -0.0096607    0.034175   -0.021152
+       8    0.028878    0.034175    0.030154
+       9    0.018871    0.034175    0.019245
+      10    0.017437    0.034175    0.011443
+      11  -0.0066859    0.034175    0.020263
+      12    0.066642    0.034175    0.018258
+   mean(Error) =   -0.0022654    RMSE =    0.038649
+   SD(Error)   =     0.038582    MAPE =      90.913
+
+Forecasts of probabilities to be in each regime
+ Horizon P[Regime 0] P[Regime 1]
+       1     0.92479    0.075214
+       2     0.92659    0.073409
+       3     0.92801    0.071991
+       4     0.92912    0.070875
+       5     0.93000    0.069998
+       6     0.93069    0.069309
+       7     0.93123    0.068766
+       8     0.93166    0.068340
+       9     0.93199    0.068005
+      10     0.93226    0.067742
+      11     0.93247    0.067535
+      12     0.93263    0.067372
+
+Forecasts for each regime
+ Horizon y[Regime 0] y[Regime 1]
+       1   -0.073318    -0.10571
+       2   -0.036135   -0.039668
+       3    0.026492    0.079535
+       4    0.010187   -0.026293
+       5    0.013925    0.030043
+       6    0.012892    0.011399
+       7   -0.010954   0.0078574
+       8    0.028419    0.035137
+       9    0.021005   -0.010376
+      10    0.017560    0.015742
+      11  -0.0058611   -0.018073
+      12    0.067172    0.059312
+17_forecast_multi_fixed [2017( 1) - 2017(12)] saved to variaveis_previsao.xlsx
+variaveis_previsao.xlsx saved to /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+

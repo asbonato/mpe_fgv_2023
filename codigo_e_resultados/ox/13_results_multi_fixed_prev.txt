@@ -1,0 +1,32 @@
+
+Switching(31) Modelling DLicms_sp by MS(2)
+              The dataset is: /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/revisao/ox/variaveis_previsao_markov.xlsx
+              The estimation sample is: 2003-03-01 - 2012-12-01
+
+*** Warning: there was no convergence; log-likelihood     236.996599
+parameter values:
+    0.0051778
+     -0.11019
+     -0.13125
+     -0.11645
+    -0.029357
+    -0.083499
+    -0.072552
+     -0.11004
+    -0.076233
+    -0.045711
+    -0.077302
+    -0.068720
+    -0.094923
+     -0.12366
+    0.0011668
+   -0.0030755
+    0.0032337
+     0.011126
+     0.026694
+      0.64872
+SQPF using analytical derivatives (eps1=0.0001; eps2=0.005):
+No convergence (maximum no of iterations reached)
+Used starting values:
+    0.0055918     -0.12027     -0.12106     -0.10749   -0.0056037    -0.080329    -0.055355     -0.10280    -0.062606    -0.023315    -0.069099    -0.063975     -0.11098     -0.11337   0.00053897   0.00057010    0.0051669    0.0054973     0.034856      0.87201      0.71607
+

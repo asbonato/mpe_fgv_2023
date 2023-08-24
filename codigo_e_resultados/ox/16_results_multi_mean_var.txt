@@ -1,0 +1,123 @@
+
+Switching(27) Modelling DLicms_sp by MS_Component(2, 2)
+              The dataset is: /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+              The estimation sample is: 2003-04-01 - 2015-12-01
+Warning: invertgen: invertsym failed, proceeding with generalized p.s.d. inverse: decomposition failed
+(3263): CovarMSAR
+
+                Coefficient   Std.Error  t-value  t-prob
+dias_uteis        0.0106704    0.003502     3.05   0.003
+CSeasonal         -0.185058     0.01650    -11.2   0.000
+CSeasonal_1       -0.123758     0.02333    -5.30   0.000
+CSeasonal_2       -0.105867     0.02325    -4.55   0.000
+CSeasonal_3      -0.0259038     0.01460    -1.77   0.078
+CSeasonal_4      -0.0977811     0.01468    -6.66   0.000
+CSeasonal_5      -0.0723384     0.01443    -5.01   0.000
+CSeasonal_6       -0.109220     0.01644    -6.64   0.000
+CSeasonal_7      -0.0890332     0.01314    -6.77   0.000
+CSeasonal_8      -0.0433842     0.01354    -3.20   0.002
+CSeasonal_9      -0.0786099     0.01483    -5.30   0.000
+CSeasonal_10     -0.0832146     0.01555    -5.35   0.000
+Constant(0)       -0.217539     0.07296    -2.98   0.003
+Constant(1)       -0.216707     0.07321    -2.96   0.004
+D2igp_m(0)     -0.000274344   0.0006539   -0.420   0.676
+D2igp_m(1)     -0.000274091    0.001143   -0.240   0.811
+Dibc_br(0)       0.00203967    0.001535     1.33   0.186
+Dibc_br(1)       0.00406314    0.004141    0.981   0.328
+
+                Coefficient   Std.Error
+sigma(0)          0.0209294    0.002289
+sigma(1)          0.0646784     0.01151
+p_{0|0}            0.853340      0.3051
+p_{1|1}            0.669034      0.6187
+pv_{0|0}           0.865411     0.05804
+pv_{1|1}           0.558164      0.1398
+
+log-likelihood     307.293896
+no. of observations       153  no. of parameters          24
+AIC               -3.70318818  SC                -3.22782537
+mean(DLicms_sp)    0.00820826  se(DLicms_sp)       0.0527596
+
+Linearity LR-test Chi^2(8)  =   23.773 [0.0025]** approximate upperbound: [0.0002]**
+
+Mean-variance component model
+Mean Transition probabilities p_{i|j} = P(Regime i at t+1 | Regime j at t)
+                Regime 0,t   Regime 1,t
+Regime 0,t+1       0.85334      0.33097
+Regime 1,t+1       0.14666      0.66903
+
+Variance Transition probabilities pv_{i|j} = P(Regime i at t+1 | Regime j at t)
+                Regime 0,t   Regime 1,t
+Regime 0,t+1       0.86541      0.44184
+Regime 1,t+1       0.13459      0.55816
+
+Transition probabilities p_{i|j} = P(State i at t+1 | State j at t)
+                 State 0,t    State 1,t    State 2,t    State 3,t
+State 0,t+1        0.73849      0.28642      0.37704      0.14623
+State 1,t+1        0.12692      0.57899     0.064800      0.29560
+State 2,t+1        0.11485     0.044544      0.47630      0.18473
+State 3,t+1       0.019739     0.090044     0.081860      0.37343
+  Independent regimes for means and variances:
+  State      Mean   sigma
+       0       0       0
+       1       1       0
+       2       0       1
+       3       1       1
+
+Used uniform probabilities to start recursion
+Std.Error based on numerical Hessian matrix
+SQPF using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+    0.0094721     -0.13752    -0.095774    -0.096168    -0.014897    -0.081074    -0.060427    -0.097397    -0.076805    -0.032883    -0.067831    -0.069835     -0.18764     -0.19950   5.8902e-05   0.00035318    0.0023522    0.0049376     0.029259     0.043167      0.84636      0.68517      0.80000      0.80000
+
+
+Forecasting DLicms_sp from 2016(1) to 2017(1)
+ Horizon    Forecast        (SE)      Actual
+       1    -0.12820    0.028756   -0.098956
+       2   -0.051167    0.030133  -0.0025879
+       3    0.018190    0.030716   0.0011706
+       4    0.041950    0.030963   -0.019807
+       5  -0.0043741    0.031067    0.014766
+       6    0.029784    0.031112   -0.010138
+       7   -0.017395    0.031131   -0.032326
+       8    0.026950    0.031138    0.056149
+       9    0.035892    0.031142  -0.0081609
+      10  -0.0016425    0.031143    0.035590
+      11  -0.0037960    0.031144   -0.013365
+      12     0.10358    0.031144    0.067305
+   mean(Error) =   -0.0050111    RMSE =    0.035460
+   SD(Error)   =     0.035104    MAPE =      422.00
+
+Forecasts of probabilities to be in each regime
+ Horizon P[Regime 0] P[Regime 1] P[Regime 2] P[Regime 3]
+       1     0.57717     0.24394     0.12540    0.053489
+       2     0.55121     0.23843     0.14676    0.063598
+       3     0.53999     0.23632     0.15558    0.068113
+       4     0.53508     0.23558     0.15923    0.070109
+       5     0.53292     0.23535     0.16074    0.070990
+       6     0.53195     0.23531     0.16136    0.071379
+       7     0.53152     0.23531     0.16162    0.071552
+       8     0.53132     0.23533     0.16172    0.071630
+       9     0.53123     0.23534     0.16177    0.071665
+      10     0.53118     0.23535     0.16178    0.071681
+      11     0.53117     0.23536     0.16179    0.071688
+      12     0.53116     0.23536     0.16179    0.071692
+
+Forecasts for each regime
+ Horizon y[Regime 0] y[Regime 1] y[Regime 2] y[Regime 3]
+       1    -0.12366    -0.13893    -0.12366    -0.13893
+       2   -0.052978   -0.046982   -0.052978   -0.046982
+       3    0.012096    0.032114    0.012096    0.032114
+       4    0.044331    0.036544    0.044331    0.036544
+       5  -0.0030985  -0.0072624  -0.0030985  -0.0072624
+       6    0.028467    0.032763    0.028467    0.032763
+       7   -0.018539   -0.014810   -0.018539   -0.014810
+       8    0.025782    0.029589    0.025782    0.029589
+       9    0.038301    0.030453    0.038301    0.030453
+      10  -0.0011900  -0.0026639  -0.0011900  -0.0026639
+      11  -0.0038217  -0.0037379  -0.0038217  -0.0037379
+      12     0.10274     0.10549     0.10274     0.10549
+16_forecast_multi_mean_var [2016( 1) - 2016(12)] saved to variaveis_previsao.xlsx
+variaveis_previsao.xlsx saved to /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final/ox/variaveis_previsao.xlsx
+

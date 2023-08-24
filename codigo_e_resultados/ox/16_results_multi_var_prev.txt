@@ -1,0 +1,133 @@
+
+Switching(24) Modelling DLicms_sp by MS(2)
+              The dataset is: /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/revisao/ox/variaveis_previsao_markov.xlsx
+              The estimation sample is: 2003-03-01 - 2015-12-01
+
+                Coefficient   Std.Error  t-value  t-prob
+dias_uteis        0.0110575    0.003438     3.22   0.002
+CSeasonal         -0.185876     0.01742    -10.7   0.000
+CSeasonal_1       -0.115431     0.02412    -4.79   0.000
+CSeasonal_2      -0.0975323     0.02186    -4.46   0.000
+CSeasonal_3      -0.0257326     0.01462    -1.76   0.081
+CSeasonal_4      -0.0969981     0.01430    -6.78   0.000
+CSeasonal_5      -0.0707920     0.01406    -5.04   0.000
+CSeasonal_6       -0.104390     0.01574    -6.63   0.000
+CSeasonal_7      -0.0874945     0.01311    -6.68   0.000
+CSeasonal_8      -0.0427923     0.01376    -3.11   0.002
+CSeasonal_9      -0.0759482     0.01423    -5.34   0.000
+CSeasonal_10     -0.0828331     0.01532    -5.41   0.000
+Constant(0)       -0.225002     0.07144    -3.15   0.002
+Constant(1)       -0.227879     0.07518    -3.03   0.003
+D216_gp_m(0)   -0.000339049   0.0004626   -0.733   0.465
+D216_gp_m(1)     0.00234500    0.003430    0.684   0.495
+D16ibc_br(0)     0.00202702    0.001505     1.35   0.180
+D16ibc_br(1)     0.00357165    0.003045     1.17   0.243
+
+                Coefficient   Std.Error
+sigma(0)          0.0215452    0.002148
+sigma(1)          0.0618759     0.01106
+p_{0|0}            0.885157     0.05555
+p_{1|1}            0.685222      0.1269
+
+log-likelihood     310.090247
+no. of observations       154  no. of parameters          22
+AIC               -3.74143177  SC                 -3.3075814
+mean(DLicms_sp)    0.00808029  se(DLicms_sp)       0.0526109
+
+Linearity LR-test Chi^2(6)  =   24.571 [0.0004]** approximate upperbound: [0.0001]**
+
+Transition probabilities p_{i|j} = P(Regime i at t+1 | Regime j at t)
+                Regime 0,t   Regime 1,t
+Regime 0,t+1       0.88516      0.31478
+Regime 1,t+1       0.11484      0.68522
+
+Used uniform probabilities to start recursion
+Std.Error based on numerical Hessian matrix
+SQPF using analytical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+    0.0093455     -0.13762    -0.096059    -0.094796    -0.015196    -0.081034    -0.060454    -0.096985    -0.076582    -0.032951    -0.067639    -0.070082     -0.18504     -0.19684   7.6477e-05   0.00038081    0.0023121    0.0048841     0.029161     0.043150      0.84791      0.68545
+
+
+Regime classification based on smoothed probabilities
+Regime 0                  months  avg.prob.
+2003-03-01 - 2004-10-01      20       0.911
+2005-02-01 - 2005-11-01      10       0.892
+2006-02-01 - 2006-11-01      10       0.884
+2007-02-01 - 2007-10-01       9       0.813
+2008-03-01 - 2008-04-01       2       0.562
+2008-06-01 - 2008-10-01       5       0.809
+2009-01-01 - 2009-12-01      12       0.788
+2010-03-01 - 2012-01-01      23       0.917
+2012-04-01 - 2012-11-01       8       0.819
+2013-03-01 - 2015-01-01      23       0.879
+2015-03-01 - 2015-12-01      10       0.846
+  Total: 132 months (85.71%) with average duration of 12.00 months.
+Regime 1                  months  avg.prob.
+2004-11-01 - 2005-01-01       3       0.849
+2005-12-01 - 2006-01-01       2       0.954
+2006-12-01 - 2007-01-01       2       0.963
+2007-11-01 - 2008-02-01       4       0.887
+2008-05-01 - 2008-05-01       1       0.999
+2008-11-01 - 2008-12-01       2       0.966
+2010-01-01 - 2010-02-01       2       0.990
+2012-02-01 - 2012-03-01       2       0.797
+2012-12-01 - 2013-02-01       3       0.828
+2015-02-01 - 2015-02-01       1       0.545
+  Total: 22 months (14.29%) with average duration of 2.20 months.
+
+
+Descriptive statistics for scaled residuals:
+Normality test:   Chi^2(2)  =   8.0037 [0.0183]* 
+ARCH 1-1 test:    F(1,130)  =   1.0574 [0.3057]  
+Portmanteau(36):  Chi^2(36) =   65.474 [0.0019]**
+
+Forecasting DLicms_sp from 2016(1) to 2017(1)
+ Horizon    Forecast        (SE)      Actual
+       1    -0.11858    0.027626   -0.098956
+       2   -0.047594    0.029645  -0.0025879
+       3    0.031554    0.030797   0.0011706
+       4    0.037196    0.031454   -0.019807
+       5   0.0057224    0.031829    0.014766
+       6    0.028364    0.032042   -0.010138
+       7  -0.0053845    0.032164   -0.032326
+       8    0.025572    0.032234    0.056149
+       9    0.041124    0.032273  -0.0081609
+      10   0.0098137    0.032296    0.035590
+      11  -0.0083277    0.032309   -0.013365
+      12    0.097822    0.032316    0.067305
+   mean(Error) =   -0.0089697    RMSE =    0.033983
+   SD(Error)   =     0.032778    MAPE =      498.37
+
+Forecasts of probabilities to be in each regime
+ Horizon P[Regime 0] P[Regime 1]
+       1     0.84922     0.15078
+       2     0.79915     0.20085
+       3     0.77060     0.22940
+       4     0.75431     0.24569
+       5     0.74502     0.25498
+       6     0.73972     0.26028
+       7     0.73670     0.26330
+       8     0.73498     0.26502
+       9     0.73399     0.26601
+      10     0.73343     0.26657
+      11     0.73311     0.26689
+      12     0.73293     0.26707
+
+Forecasts for each regime
+ Horizon y[Regime 0] y[Regime 1]
+       1    -0.11977    -0.11188
+       2   -0.050979   -0.034129
+       3    0.023699    0.057939
+       4    0.036098    0.040569
+       5   0.0022835    0.015771
+       6    0.025802    0.035648
+       7  -0.0096039   0.0064214
+       8    0.022669    0.033622
+       9    0.038676    0.047878
+      10   0.0044094    0.024683
+      11   -0.011946   0.0016115
+      12    0.094225     0.10769
+16_forecast_multi_var_prev [2016( 1) - 2016(12)] saved to variaveis_previsao_markov.xlsx
+variaveis_previsao_markov.xlsx saved to /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/revisao/ox/variaveis_previsao_markov.xlsx
+

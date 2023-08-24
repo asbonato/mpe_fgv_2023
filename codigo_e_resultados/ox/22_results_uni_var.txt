@@ -1,0 +1,136 @@
+
+Ox Professional version 8.20 (OS_X_64/U) (C) J.A. Doornik, 1994-2019
+
+---- Switching - PcGive 2.08 session started at 17:52:31 on 23-05-2023 ----
+
+Switching( 1) Modelling DLicms_sp by MS(2)
+              The dataset is: /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final_diff/ox/variaveis_previsao.xlsx
+              The estimation sample is: 2003-03-01 - 2021-12-01
+
+                 Coefficient   Std.Error  t-value  t-prob
+CSeasonal         -0.0920864     0.01230    -7.48   0.000
+CSeasonal_1        -0.146678     0.01168    -12.6   0.000
+CSeasonal_2       -0.0698385     0.01138    -6.14   0.000
+CSeasonal_3       -0.0171556     0.01110    -1.55   0.124
+CSeasonal_4       -0.0560157     0.01119    -5.01   0.000
+CSeasonal_5       -0.0613883     0.01091    -5.63   0.000
+CSeasonal_6       -0.0544991     0.01095    -4.98   0.000
+CSeasonal_7       -0.0465791     0.01077    -4.32   0.000
+CSeasonal_8       -0.0278081     0.01079    -2.58   0.011
+CSeasonal_9       -0.0292780     0.01091    -2.68   0.008
+CSeasonal_10      -0.0578339     0.01095    -5.28   0.000
+Constant(0)       0.00999123    0.002338     4.27   0.000
+Constant(1)       0.00962218     0.01260    0.764   0.446
+DLicms_sp_1(0)     -0.510043     0.06281    -8.12   0.000
+DLicms_sp_1(1)     0.0892876      0.1960    0.456   0.649
+
+                Coefficient   Std.Error
+sigma(0)          0.0307195    0.001778
+sigma(1)          0.0694208     0.01040
+p_{0|0}            0.986492     0.01003
+p_{1|1}            0.923053     0.06923
+
+log-likelihood     429.129143
+no. of observations       226  no. of parameters          19
+AIC               -3.62946145  SC                -3.34189434
+mean(DLicms_sp)    0.00777758  se(DLicms_sp)       0.0532509
+
+Linearity LR-test Chi^2(5)  =   49.979 [0.0000]** approximate upperbound: [0.0000]**
+
+Transition probabilities p_{i|j} = P(Regime i at t+1 | Regime j at t)
+                Regime 0,t   Regime 1,t
+Regime 0,t+1       0.98649     0.076947
+Regime 1,t+1      0.013508      0.92305
+
+Used uniform probabilities to start recursion
+Std.Error based on numerical Hessian matrix
+SQPF using analytical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+    -0.097330     -0.12631    -0.054402    -0.028773    -0.067244    -0.051927    -0.045079    -0.041595    -0.027560    -0.031289    -0.059264     0.012410    0.0025034     -0.22941     -0.30668     0.029841     0.054859      0.84399      0.69807
+
+
+Regime classification based on smoothed probabilities
+Regime 0                  months  avg.prob.
+2003-03-01 - 2007-12-01      58       0.965
+2009-02-01 - 2020-03-01     134       0.979
+2021-09-01 - 2021-12-01       4       0.684
+  Total: 196 months (86.73%) with average duration of 65.33 months.
+Regime 1                  months  avg.prob.
+2008-01-01 - 2009-01-01      13       0.905
+2020-04-01 - 2021-08-01      17       0.891
+  Total: 30 months (13.27%) with average duration of 15.00 months.
+
+
+Descriptive statistics for scaled residuals:
+Normality test:   Chi^2(2)  =   2.1254 [0.3455]  
+ARCH 1-1 test:    F(1,205)  =   1.9379 [0.1654]  
+Portmanteau(36):  Chi^2(36) =   71.039 [0.0004]**
+
+Forecasting DLicms_sp from 2022(1) to 2023(1)
+ Horizon    Forecast        (SE)      Actual
+       1   -0.050389    0.040214    -0.10126
+       2   -0.063550    0.043432   -0.056654
+       3    0.018402    0.043033    0.028260
+       4    0.040816    0.042745    0.032972
+       5  -0.0065778    0.042896   0.0040943
+       6   0.0059615    0.042921   0.0044958
+       7   0.0080511    0.041622    0.026598
+       8    0.015143    0.040619   0.0074379
+       9    0.031119    0.041081   -0.017194
+      10    0.023321    0.040835   -0.098087
+      11  -0.0022200    0.041328    0.025238
+      12    0.065737    0.041421    0.096236
+ Standard errors based on M=10000 replications
+   mean(Error) =    -0.011140    RMSE =    0.042887
+   SD(Error)   =     0.041415    MAPE =      94.410
+
+Forecasts of probabilities to be in each regime
+ Horizon P[Regime 0] P[Regime 1]
+       1     0.74534     0.25466
+       2     0.75487     0.24513
+       3     0.76353     0.23647
+       4     0.77141     0.22859
+       5     0.77858     0.22142
+       6     0.78510     0.21490
+       7     0.79103     0.20897
+       8     0.79643     0.20357
+       9     0.80134     0.19866
+      10     0.80580     0.19420
+      11     0.80986     0.19014
+      12     0.81355     0.18645
+
+Forecasts for each regime
+ Horizon y[Regime 0] y[Regime 1]
+       1   -0.060173   -0.021756
+       2   -0.051066   -0.084069
+       3    0.021129   -0.012793
+       4    0.036989    0.046254
+       5  -0.0099604    0.012667
+       6   0.0086132   0.0042949
+       7   0.0060291    0.010437
+       8    0.015267    0.018905
+       9    0.029326    0.038432
+      10    0.020686    0.038706
+      11  -0.0034631    0.010174
+      12    0.066688    0.065461
+
+Regime classification based on smoothed probabilities
+Regime 0                  months  avg.prob.
+2003-03-01 - 2007-12-01      58       0.965
+2009-02-01 - 2020-03-01     134       0.979
+2021-09-01 - 2021-12-01       4       0.684
+  Total: 196 months (86.73%) with average duration of 65.33 months.
+Regime 1                  months  avg.prob.
+2008-01-01 - 2009-01-01      13       0.905
+2020-04-01 - 2021-08-01      17       0.891
+  Total: 30 months (13.27%) with average duration of 15.00 months.
+
+
+Descriptive statistics for scaled residuals:
+Normality test:   Chi^2(2)  =   2.1254 [0.3455]  
+ARCH 1-1 test:    F(1,205)  =   1.9379 [0.1654]  
+Portmanteau(36):  Chi^2(36) =   71.039 [0.0004]**
+22_forecast_uni_var [2022( 1) - 2022(12)] saved to variaveis_previsao.xlsx
+variaveis_previsao.xlsx saved to /Users/asbonato/mpe-fgv-eesp/_dissertacao/codigo/final_diff/ox/variaveis_previsao.xlsx
+
